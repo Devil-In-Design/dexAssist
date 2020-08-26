@@ -1,0 +1,4 @@
+Colors included within this package:
+#5b21ee
+#1f1f1f
+#ffffff

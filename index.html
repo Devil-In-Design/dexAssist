@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dex</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>PokeDex v.2</h1>
+
+    <form class="main" id="main">
+        <input type="text" id="type-input" placeholder="Type">
+        <input type="submit" id="submit" value="Submit">
+    </form>
+
+    <div class="popup-wrapper">
+        <div class="popup">
+            <div class="popup-close">X</div>
+            <div class="popup-content" id="content">
+                <h2>Hello, Trainer!</h2>
+                <p>This Pokemon is weak against: <span id="weakness">weakness</span></p>
+                <p>It is resistant to: <span id="resistance">resistance</span></p>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <script src="js/app.js"></script>
+</body>
+</html>
