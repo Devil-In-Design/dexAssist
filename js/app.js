@@ -123,7 +123,7 @@ popup.addEventListener("click", () => {
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    let input = document.getElementById("type-input").value.toLowerCase();
+    let input = document.getElementById("type-input").value.toLowerCase().trim();
 
     findType = (input) => {
         let obj = types.find((o) => o.type == input);
