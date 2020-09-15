@@ -1,8 +1,6 @@
 html,
 body,
-div,
-span,
-img {
+div {
     margin: 0;
     padding: 0;
     border: 0;
@@ -14,7 +12,7 @@ img {
 
 .pokedex {
     background-color: crimson;
-    background-image: url(../images/wp3170171.png);
+    background-image: url(../images/wp3170170.png);
     background-position: center;
     background-size: 100%;
     min-height: 50vh;
@@ -164,7 +162,7 @@ p {
 
     h1 {
         text-align: center;
-        padding-top: 50%;
+        padding-top: 35%;
         color: crimson;
         display: block;
         margin: 0 auto 20px auto;
@@ -214,39 +212,11 @@ p {
 @media only screen and (min-width: 992px) {
     .pokedex {
         background-color: crimson;
-        background-image: url(../images/wp3170171.png);
+        background-image: url(../images/wp3170170.jpg);
         background-position: center;
         background-size: 100%;
         min-height: 100vh;
-    }
-
-    h1 {
-        text-align: center;
-        padding-top: 50%;
-        color: crimson;
-        display: block;
-        margin: 0 auto 20px auto;
-    }
-
-    form {
-        max-width: 60%;
-        max-height: 60%;
-        margin: 40px auto;
-        background: gold;
-        padding: 10px;
-        border-radius: 40px;
-        border: 1px dotted #ddd;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .pokedex {
-        background-color: crimson;
-        background-image: url(../images/wp3170171.png);
-        background-position: center;
-        background-size: 100%;
-        min-height: 100vh;
+        position: relative;
     }
 
     h1 {
