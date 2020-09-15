@@ -17,7 +17,7 @@ img {
     background-image: url(../images/wp3170171.png);
     background-position: center;
     background-size: 100%;
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
 h1 {
@@ -154,6 +154,7 @@ p {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .pokedex {
+        position: relative;
         background-color: crimson;
         background-image: url(../images/wp3170171.png);
         background-position: center;
