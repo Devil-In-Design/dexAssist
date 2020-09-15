@@ -1,37 +1,54 @@
-body {
+html,
+body,
+div,
+span,
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.pokedex {
     background-color: crimson;
-    background-image: url(../images/pokedex.jpg);
+    background-image: url(../images/wp3170171.png);
     background-position: center;
-	background-size: 100%;	
+    background-size: 100%;
+    min-height: 100vh;
 }
 
 h1 {
-	color: cyan;
-	display: block;
-	margin: 20px auto;
+    text-align: center;
+    padding-top: 120px;
+    color: crimson;
+    display: block;
+    margin: 0 auto 20px auto;
 }
 
-button{
+button {
     display: block;
     margin: 20px auto;
     background: grey;
     color: cyan;
     border: 0;
     padding: 6px 10px;
-		border-radius: 20px;
+    border-radius: 20px;
 }
 
-input{
+input {
     display: block;
     margin: 10px auto;
     background: gray;
     color: cyan;
     border: 0;
     padding: 4px;
-		border-radius: 20px;
+    border-radius: 20px;
 }
 
-::placeholder{
+::placeholder {
     color: cyan;
     opacity: 1;
 }
@@ -46,16 +63,16 @@ li {
     border: 1px dotted #ddd;
     font-weight: bold;
     background-color: blue;
-		border-radius: 20px;
-		color: white;
+    border-radius: 20px;
+    color: white;
 }
 
 .fin {
     background-color: green;
 }
 
-.popup-wrapper{
-    background: rgba(0,0,0,0.5);
+.popup-wrapper {
+    background: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     left: 0;
@@ -64,7 +81,7 @@ li {
     display: none;
 }
 
-.popup{
+.popup {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     width: 100%;
@@ -73,33 +90,89 @@ li {
     padding: 20px;
     background: cyan;
     position: relative;
-	border-radius: 40px;
+    border-radius: 40px;
 }
 
-.popup a{
+.popup a {
     background: grey;
     color: cyan;
     text-decoration: none;
     padding: 6px 10px;
 }
 
-.popup-close{
+.popup-close {
     position: absolute;
     top: 8px;
     right: 15px;
-		display: none;
+    display: none;
     cursor: pointer;
 }
 
-form{
-    max-width: 40%;
+form {
+    max-width: 60%;
+    max-height: 60%;
     margin: 40px auto;
-    background: blue;
+    background: gold;
     padding: 10px;
-		border-radius: 40px;
-		border: 1px dotted #ddd;
+    border-radius: 40px;
+    border: 1px dotted #ddd;
 }
 
-p{
+p {
     text-decoration: solid;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .pokedex {
+        background-color: crimson;
+        background-image: url(../images/wp3170171.png);
+        background-position: center;
+        background-size: 100%;
+        min-height: 100vh;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .pokedex {
+        background-color: crimson;
+        background-image: url(../images/wp3170171.png);
+        background-position: center;
+        background-size: 100%;
+        min-height: 100vh;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .pokedex {
+        background-color: crimson;
+        background-image: url(../images/wp3170171.png);
+        background-position: center;
+        background-size: 100%;
+        min-height: 100vh;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .pokedex {
+        background-color: crimson;
+        background-image: url(../images/wp3170171.png);
+        background-position: center;
+        background-size: 100%;
+        min-height: 100vh;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .pokedex {
+        background-color: crimson;
+        background-image: url(../images/wp3170171.png);
+        background-position: center;
+        background-size: 100%;
+        min-height: 100vh;
+    }
 }
