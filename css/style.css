@@ -131,6 +131,24 @@ p {
         background-size: 100%;
         min-height: 100vh;
     }
+
+    h1 {
+        text-align: center;
+        padding-top: 120px;
+        color: crimson;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+
+    form {
+        max-width: 60%;
+        max-height: 60%;
+        margin: 40px auto;
+        background: gold;
+        padding: 10px;
+        border-radius: 40px;
+        border: 1px dotted #ddd;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -141,6 +159,24 @@ p {
         background-position: center;
         background-size: 100%;
         min-height: 100vh;
+    }
+
+    h1 {
+        text-align: center;
+        padding-top: 120px;
+        color: crimson;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+
+    form {
+        max-width: 60%;
+        max-height: 60%;
+        margin: 40px auto;
+        background: gold;
+        padding: 10px;
+        border-radius: 40px;
+        border: 1px dotted #ddd;
     }
 }
 
@@ -153,6 +189,24 @@ p {
         background-size: 100%;
         min-height: 100vh;
     }
+
+    h1 {
+        text-align: center;
+        padding-top: 120px;
+        color: crimson;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+
+    form {
+        max-width: 60%;
+        max-height: 60%;
+        margin: 40px auto;
+        background: gold;
+        padding: 10px;
+        border-radius: 40px;
+        border: 1px dotted #ddd;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -164,6 +218,24 @@ p {
         background-size: 100%;
         min-height: 100vh;
     }
+
+    h1 {
+        text-align: center;
+        padding-top: 120px;
+        color: crimson;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+
+    form {
+        max-width: 60%;
+        max-height: 60%;
+        margin: 40px auto;
+        background: gold;
+        padding: 10px;
+        border-radius: 40px;
+        border: 1px dotted #ddd;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -174,5 +246,23 @@ p {
         background-position: center;
         background-size: 100%;
         min-height: 100vh;
+    }
+
+    h1 {
+        text-align: center;
+        padding-top: 120px;
+        color: crimson;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+
+    form {
+        max-width: 60%;
+        max-height: 60%;
+        margin: 40px auto;
+        background: gold;
+        padding: 10px;
+        border-radius: 40px;
+        border: 1px dotted #ddd;
     }
 }
