@@ -39,7 +39,7 @@ button {
 input {
     display: block;
     margin: 10px auto;
-    background: gray;
+    background: black;
     color: cyan;
     border: 0;
     padding: 4px;
@@ -110,7 +110,7 @@ form {
     max-width: 60%;
     max-height: 60%;
     margin: 40px auto;
-    background: gold;
+    background: rebeccapurple;
     padding: 10px;
     border-radius: 40px;
     border: 1px dotted #ddd;
@@ -142,7 +142,7 @@ p {
         max-width: 60%;
         max-height: 60%;
         margin: 40px auto;
-        background: gold;
+        background: rebeccapurple;
         padding: 10px;
         border-radius: 40px;
         border: 1px dotted #ddd;
@@ -172,7 +172,7 @@ p {
         max-width: 60%;
         max-height: 60%;
         margin: 40px auto;
-        background: gold;
+        background: rebeccapurple;
         padding: 10px;
         border-radius: 40px;
         border: 1px dotted #ddd;
@@ -201,7 +201,7 @@ p {
         max-width: 60%;
         max-height: 60%;
         margin: 40px auto;
-        background: gold;
+        background: rebeccapurple;
         padding: 10px;
         border-radius: 40px;
         border: 1px dotted #ddd;
@@ -231,7 +231,7 @@ p {
         max-width: 60%;
         max-height: 60%;
         margin: 40px auto;
-        background: gold;
+        background: rebeccapurple;
         padding: 10px;
         border-radius: 40px;
         border: 1px dotted #ddd;
