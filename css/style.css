@@ -47,6 +47,7 @@ input {
 }
 
 ::placeholder {
+    text-align: center;
     color: cyan;
     opacity: 1;
 }
