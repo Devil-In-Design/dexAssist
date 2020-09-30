@@ -128,12 +128,12 @@ form.addEventListener("submit", (e) => {
 
   findType = (input) => {
     let obj = types.find((o) => o.type == input);
-    return obj ? obj.weakness : console.log("Object Not FOUND");
+    return obj ? obj.weakness : console.log("Error");
   };
 
   findRes = (input) => {
     let obj = types.find((o) => o.type == input);
-    return obj ? obj.resistance : console.log("Object Not FOUND");
+    return obj ? obj.resistance : console.log("Error");
   };
 
   // ^^^^ here we add a code copy of the findType above, but geared for the resistance
