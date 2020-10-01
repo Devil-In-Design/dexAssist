@@ -145,6 +145,9 @@ form.addEventListener("submit", (e) => {
   form.reset();
 });
 
+
+
+
 // add in pokemon go team rocket counter guides
 // add in combo weakness
 // add resistance sets
