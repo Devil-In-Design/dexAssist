@@ -16,25 +16,35 @@
 </head>
 
 <body>
-    <div class="pokedex">
-        <h1>PokeDex v.2</h1>
 
-        <form class="main" id="main">
+
+    <form class="main" id="main">
+
+        <div class="segment">
+            <h1>PokéDex v.2</h1>
+        </div>
+
+        <label>
             <input type="text" id="type-input" placeholder="Input Pokemon Type">
-            <input type="submit" id="submit" value="Submit">
-        </form>
+        </label>
 
-        <div class="popup-wrapper">
-            <div class="popup">
-                <div class="popup-close">X</div>
-                <div class="popup-content" id="content">
-                    <h2>Hello, Trainer!</h2>
-                    <p>This Pokemon is weak against: <span id="weakness">Error</span></p>
-                    <p>It is resistant to: <span id="resistance">Error</span></p>
-                </div>
+        <button class="red" type="button submit" id="submit" value="Submit"><i class="icon ion-md-lock"></i>
+            Search</button>
+
+    </form>
+
+    <div class="popup-wrapper">
+        <div class="popup">
+            <div class="popup-close">X</div>
+            <div class="popup-content" id="content">
+                <h2>Hello, Trainer!</h2>
+                <p>This Pokémon is weak against: <span id="weakness">Error</span></p>
+                <p>It is resistant to: <span id="resistance">Error</span></p>
             </div>
         </div>
     </div>
+    
+
 
     <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

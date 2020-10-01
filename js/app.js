@@ -139,11 +139,15 @@ form.addEventListener("submit", (e) => {
   // ^^^^ here we add a code copy of the findType above, but geared for the resistance
 
   // console.log(findType(input));
-  weakness.innerText = findType(input).toUpperCase();
-  resistance.innerText = findRes(input).toUpperCase();
+  weakness.innerText = findType(input);
+  resistance.innerText = findRes(input);
+  
+
 
   form.reset();
 });
+
+
 
 
 
