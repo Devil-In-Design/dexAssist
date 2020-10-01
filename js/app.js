@@ -64,7 +64,7 @@ const types = [
     weakness: "fighting, ground, fire",
     resistance:
       "normal, flying, rock, bug, steel, grass, psychic, ice, dragon, fairy",
-      imgFile: 'icons/steel.svg',
+    imgFile: 'icons/steel.svg',
   },
   {
     type: "fire",
@@ -157,7 +157,7 @@ form.addEventListener("submit", (e) => {
   // console.log(findType(input));
   weakness.innerText = findType(input);
   resistance.innerText = findRes(input);
-  
+
   form.reset();
 });
 
