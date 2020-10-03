@@ -167,6 +167,8 @@ form.addEventListener("submit", (e) => {
   
   resistance.innerText = findRes(input);
 
+  popup.innerHTML = `${input}.classList.remove("hide")`;
+
   form.reset();
 	blink.style.display = "block";
 });
