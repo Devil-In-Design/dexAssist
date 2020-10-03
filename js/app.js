@@ -181,3 +181,15 @@ form.addEventListener("submit", (e) => {
 // 	this.resist = resist;
 //     // this. // function
 // };
+
+
+
+let request = new XMLHttpRequest();
+let url = ""; // add api url
+request.open("GET", url, true);
+request.send();
+let response = request.responseText;
+let data =  JSON.parse(response);
+console.log(data);
+console.log(data["text"]);
+
