@@ -252,5 +252,27 @@ const generateHtml = (data) => {
     const pokemonDiv = document.querySelector('.pokemon')
     pokemonDiv.innerHTML = html
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    -—---------------------
+    
+    
+    
+    
+    
+    maybe store the find() returns in variables on a global scale, and then call them with literal notation later on click  this could pull the img and data at the same time. possible to integrate the api here? turn the popup into an html element on display?
+    
     */
     
