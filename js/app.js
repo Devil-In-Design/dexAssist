@@ -11,7 +11,6 @@ const popup = document.querySelector(".popup-wrapper");
 const close = document.querySelector(".popup-close");
 const weakness = document.getElementById("weakness");
 const resistance = document.getElementById("resistance");
-let input = document.getElementById("type-input").value.toLowerCase().trim();
 const types = [
   {
     type: "normal",
@@ -140,12 +139,6 @@ findRes = (input) => {
   return obj2 ? obj2.resistance : console.log("Error");
 };
 
-findIcon = (input) => {
-  let obj3 = types.find((o) => o.type == input);
-  let icon = obj3 ? obj3.imgFile : console.log("Error");
-  return icon;
-};
-
 // let results = [];
 
 // Event Listeners
@@ -167,11 +160,8 @@ popup.addEventListener("click", () => {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
- 
+  let input = document.getElementById("type-input").value.toLowerCase().trim();
 
-  findType();
-  findRes();
-  findIcon();
   // console.log(findType(input));
   weakness.innerText = findType(input);
   
