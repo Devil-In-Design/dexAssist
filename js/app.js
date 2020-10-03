@@ -4,6 +4,7 @@
 // store the popup msg in a variable, then select the html element by id and set el.innerHTML = msg
 
 const form = document.querySelector("#main");
+const blink = document.querySelector("#type-input");
 const button = document.querySelector("#submit");
 const heading = document.querySelector("h1");
 const popup = document.querySelector(".popup-wrapper");
@@ -130,6 +131,7 @@ button.addEventListener("click", () => {
   //   console.log("You clicked me!");
   //popup
   popup.style.display = "block";
+  blink.style.display = "none";
 });
 
 close.addEventListener("click", () => {
