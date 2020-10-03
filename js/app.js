@@ -167,11 +167,13 @@ form.addEventListener("submit", (e) => {
   
   resistance.innerText = findRes(input);
 
-  popup.innerHTML = `${input}.classList.remove("hide")`;
+  // popup.innerHTML = `${input}.classList.remove("hide")`;
 
   form.reset();
-	blink.style.display = "block";
+  blink.style.display = "block";
 });
+
+
 
 // class of hide on the images initially. need to set up js to show the appropriate symbol with the response for input. 
 
