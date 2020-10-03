@@ -161,6 +161,7 @@ form.addEventListener("submit", (e) => {
   resistance.innerText = findRes(input);
 
   form.reset();
+	blink.style.display = "block";
 });
 
 
