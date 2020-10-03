@@ -184,12 +184,13 @@ form.addEventListener("submit", (e) => {
 
 
 
-let request = new XMLHttpRequest();
-let url = ""; // add api url
-request.open("GET", url, true);
-request.send();
-let response = request.responseText;
-let data =  JSON.parse(response);
-console.log(data);
-console.log(data["text"]);
+// let request = new XMLHttpRequest();
+// let url = "https://pokeapi.co/api/v2/"; // add api url
+// request.open("GET", url, true);
+// request.send();
+// let response = request.responseText;
+// console.log(request.responseText);
+// let data =  JSON.stringify(response);
+// console.log(data);
+// console.log(data["text"]);
 
