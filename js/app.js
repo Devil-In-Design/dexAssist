@@ -164,7 +164,7 @@ form.addEventListener("submit", (e) => {
 	blink.style.display = "block";
 });
 
-
+// class of hide on the images initially. need to set up js to show the appropriate symbol with the response for input. 
 
 
 

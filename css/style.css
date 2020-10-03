@@ -275,3 +275,7 @@ button.red {
   background: #539ddf;
   box-shadow: 0 0 20px #539ddf;
 }
+
+.hide {
+  display: none;
+}
