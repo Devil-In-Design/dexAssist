@@ -11,6 +11,8 @@ const popup = document.querySelector(".popup-wrapper");
 const close = document.querySelector(".popup-close");
 const weakness = document.getElementById("weakness");
 const resistance = document.getElementById("resistance");
+const weakImg = document.getElementById("weakImg");
+const resImg = document.getElementById("resImg");
 const types = [
   {
     type: "normal",
@@ -128,16 +130,21 @@ findType = (input) => {
   return obj ? obj.weakness : console.log("Error");
 };
 
+findRes = (input) => {
+  let obj2 = types.find((o) => o.type == input);
+  return obj2 ? obj2.resistance : console.log("Error");
+};
+
+findImg = (input) => {
+  let objI = types.find((o) => o.type == input);
+  return objI ? objI.imgFile : console.log("No Image Loaded");
+};
+
 // findType = (input) => {
 //  if( types.includes(`${input}`)){
 //   weakness.innerText = findType(input);
 //  };
 // };
-
-findRes = (input) => {
-  let obj2 = types.find((o) => o.type == input);
-  return obj2 ? obj2.resistance : console.log("Error");
-};
 
 // let results = [];
 
@@ -161,11 +168,16 @@ popup.addEventListener("click", () => {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let input = document.getElementById("type-input").value.toLowerCase().trim();
+  let image = input.imgFile;
+  console.log(input.imgFile);
+  
 
   // console.log(findType(input));
   weakness.innerText = findType(input);
   
   resistance.innerText = findRes(input);
+
+  weakImg.innerHTML = image ;
 
   // popup.innerHTML = `${input}.classList.remove("hide")`;
 
@@ -173,12 +185,7 @@ form.addEventListener("submit", (e) => {
   blink.style.display = "block";
 });
 
-
-
 // class of hide on the images initially. need to set up js to show the appropriate symbol with the response for input. 
-
-
-
 
 // add in pokemon go team rocket counter guides
 // add in combo weakness
