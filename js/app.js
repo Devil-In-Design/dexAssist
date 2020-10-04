@@ -18,110 +18,110 @@ const types = [
     type: "normal",
     weakness: "fighting",
     resistance: "none",
-    imgFile: 'icons/normal.svg',
+    imgFile: 'icon-set/icons/normal.svg',
   },
   {
     type: "fighting",
     weakness: "flying, psychic, fairy",
     resistance: "dark, rock, bug",
-    imgFile: 'icons/fighting.svg',
+    imgFile: 'icon-set/icons/fighting.svg',
   },
   {
     type: "flying",
     weakness: "rock, electric, ice",
     resistance: "fighting, bug, grass",
-    imgFile: 'icons/flying.svg',
+    imgFile: 'icon-set/icons/flying.svg',
   },
   {
     type: "poison",
     weakness: "ground, psychic",
     resistance: "fighting, poison, bug, grass, fairy",
-    imgFile: 'icons/poison.svg',
+    imgFile: 'icon-set/icons/poison.svg',
   },
   {
     type: "ground",
     weakness: "water, grass, ice",
     resistance: "poison, rock",
-    imgFile: 'icons/ground.svg',
+    imgFile: 'icon-set/icons/ground.svg',
   },
   {
     type: "rock",
     weakness: "fighting, ground, steel, water, grass",
     resistance: "normal, flying, poison, fire",
-    imgFile: 'icons/rock.svg',
+    imgFile: 'icon-set/icons/rock.svg',
   },
   {
     type: "bug",
     weakness: "flying, rock, fire",
     resistance: "fighting, ground, grass",
-    imgFile: 'icons/bug.svg',
+    imgFile: 'icon-set/icons/bug.svg',
   },
   {
     type: "ghost",
     weakness: "ghost, dark",
     resistance: "poison, bug",
-    imgFile: 'icons/ghost.svg',
+    imgFile: 'icon-set/icons/ghost.svg',
   },
   {
     type: "steel",
     weakness: "fighting, ground, fire",
     resistance:
       "normal, flying, rock, bug, steel, grass, psychic, ice, dragon, fairy",
-    imgFile: 'icons/steel.svg',
+    imgFile: 'icon-set/icons/steel.svg',
   },
   {
     type: "fire",
     weakness: "ground, rock, water",
     resistance: "bug, steel, fire, grass, ice, fairy",
-    imgFile: 'icons/fire.svg',
+    imgFile: 'icon-set/icons/fire.svg',
   },
   {
     type: "water",
     weakness: "grass, electric",
     resistance: "steel, fire, water, ice",
-    imgFile: 'icons/water.svg',
+    imgFile: 'icon-set/icons/water.svg',
   },
   {
     type: "grass",
     weakness: "flying, poison, bug, fire, ice",
     resistance: "ground, water, grass, electric",
-    imgFile: 'icons/grass.svg',
+    imgFile: 'icon-set/icons/grass.svg',
   },
   {
     type: "electric",
     weakness: "ground",
     resistance: "flying, steel, electric",
-    imgFile: 'icons/electric.svg',
+    imgFile: 'icon-set/icons/electric.svg',
   },
   {
     type: "psychic",
     weakness: "bug, ghost, dark",
     resistance: "fighting, psychic",
-    imgFile: 'icons/psychic.svg',
+    imgFile: 'icon-set/icons/psychic.svg',
   },
   {
     type: "ice",
     weakness: "fighting, rock, steel, fire",
     resistance: "ice",
-    imgFile: 'icons/ice.svg',
+    imgFile: 'icon-set/icons/ice.svg',
   },
   {
     type: "dragon",
     weakness: "ice, dragon, fairy",
     resistance: "fire, water, grass, electric",
-    imgFile: 'icons/dragon.svg',
+    imgFile: 'icon-set/icons/dragon.svg',
   },
   {
     type: "dark",
     weakness: "fighting, bug, fairy",
     resistance: "ghost, dark",
-    imgFile: 'icons/dark.svg',
+    imgFile: 'icon-set/icons/dark.svg',
   },
   {
     type: "fairy",
     weakness: "poison, ghost, dragon",
     resistance: "fighting, bug, dark",
-    imgFile: 'icons/fairy.svg',
+    imgFile: 'icon-set/icons/fairy.svg',
   },
 ];
 
@@ -139,6 +139,21 @@ findImg = (input) => {
   let objI = types.find((o) => o.type == input);
   return objI ? objI.imgFile : console.log("No Image Loaded");
 };
+
+getImage = (input) => { 
+  let img = new Image(); 
+  weakImg.innerHTML =  img;
+  weakImg.appendChild(img); 
+}  
+
+
+
+
+
+
+
+
+
 
 // findType = (input) => {
 //  if( types.includes(`${input}`)){
@@ -168,8 +183,11 @@ popup.addEventListener("click", () => {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let input = document.getElementById("type-input").value.toLowerCase().trim();
-  let image = input.imgFile;
-  console.log(input.imgFile);
+  let image = types.find(type => type).imgFile;
+  console.log(image);
+  getImage(image);
+
+  
   
 
   // console.log(findType(input));
@@ -177,7 +195,7 @@ form.addEventListener("submit", (e) => {
   
   resistance.innerText = findRes(input);
 
-  weakImg.innerHTML = image ;
+  weakImg.innerHTML = `<img src="${image}" />` ;
 
   // popup.innerHTML = `${input}.classList.remove("hide")`;
 
