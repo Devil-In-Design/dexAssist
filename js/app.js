@@ -183,9 +183,9 @@ popup.addEventListener("click", () => {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let input = document.getElementById("type-input").value.toLowerCase().trim();
-  let image = types.find(type => type).imgFile;
-  console.log(image);
-  getImage(image);
+  // let image = types.find(type => type).imgFile;
+  // console.log(image);
+  // getImage(image);
 
   
   
@@ -195,7 +195,7 @@ form.addEventListener("submit", (e) => {
   
   resistance.innerText = findRes(input);
 
-  weakImg.innerHTML = `<img src="${image}" />` ;
+  // weakImg.innerHTML = `<img src="${image}" />` ;
 
   // popup.innerHTML = `${input}.classList.remove("hide")`;
 
