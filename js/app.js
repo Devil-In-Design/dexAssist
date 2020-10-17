@@ -195,7 +195,7 @@ form.addEventListener("submit", (e) => {
   
   resistance.innerText = findRes(input);
 
-  // weakImg.innerHTML = `<img src="${image}" />` ;
+  // weakImg.innerHTML = `<img src="${input.image}" />` ;
 
   // popup.innerHTML = `${input}.classList.remove("hide")`;
 
