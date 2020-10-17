@@ -183,7 +183,7 @@ popup.addEventListener("click", () => {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let input = document.getElementById("type-input").value.toLowerCase().trim();
-  // let image = types.find(type => type).imgFile;
+  // let image = types.find(type => type.imgFile);
   // console.log(image);
   // getImage(image);
 
