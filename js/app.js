@@ -147,7 +147,7 @@ getImage = (input) => {
 }  
 
 
-
+// what if we dynamically insert the image element instead of removing a hidden class in the html?
 
 
 
