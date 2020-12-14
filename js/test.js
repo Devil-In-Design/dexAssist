@@ -1,23 +1,3 @@
-// Separate the weakness and resistance
-// Try the display blocking and show a class for each image and type when it matches the input value.weak or res
-// Make sure to check the test.js for notes 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // add in pokemon go team rocket counter guides
 // add in combo weakness
 // add resistance sets
@@ -33,113 +13,113 @@ const weakness = document.getElementById("weakness");
 const resistance = document.getElementById("resistance");
 const weakImg = document.getElementById("weakImg");
 const resImg = document.getElementById("resImg");
-// const weak = document.getElementById("weak");
-// const res = document.getElementById("res");
+const weak = document.getElementById("weak");
+const res = document.getElementById("res");
 const types = [
-  {
+  normal = {
     type: "normal",
     weakness: "fighting",
     resistance: "none",
     imgFile: 'icon-set/icons/normal.svg',
   },
-  {
+  fighting = {
     type: "fighting",
     weakness: "flying, psychic, fairy",
     resistance: "dark, rock, bug",
     imgFile: 'icon-set/icons/fighting.svg',
   },
-  {
+  flying = {
     type: "flying",
     weakness: "rock, electric, ice",
     resistance: "fighting, bug, grass",
     imgFile: 'icon-set/icons/flying.svg',
   },
-  {
+  poison = {
     type: "poison",
     weakness: "ground, psychic",
     resistance: "fighting, poison, bug, grass, fairy",
     imgFile: 'icon-set/icons/poison.svg',
   },
-  {
+  ground = {
     type: "ground",
     weakness: "water, grass, ice",
     resistance: "poison, rock",
     imgFile: 'icon-set/icons/ground.svg',
   },
-  {
+  rock = {
     type: "rock",
     weakness: "fighting, ground, steel, water, grass",
     resistance: "normal, flying, poison, fire",
     imgFile: 'icon-set/icons/rock.svg',
   },
-  {
+  bug = {
     type: "bug",
     weakness: "flying, rock, fire",
     resistance: "fighting, ground, grass",
     imgFile: 'icon-set/icons/bug.svg',
   },
-  {
+  ghost = {
     type: "ghost",
     weakness: "ghost, dark",
     resistance: "poison, bug",
     imgFile: 'icon-set/icons/ghost.svg',
   },
-  {
+  steel = {
     type: "steel",
     weakness: "fighting, ground, fire",
     resistance:
       "normal, flying, rock, bug, steel, grass, psychic, ice, dragon, fairy",
     imgFile: 'icon-set/icons/steel.svg',
   },
-  {
+  fire = {
     type: "fire",
     weakness: "ground, rock, water",
     resistance: "bug, steel, fire, grass, ice, fairy",
     imgFile: 'icon-set/icons/fire.svg',
   },
-  {
+  water = {
     type: "water",
     weakness: "grass, electric",
     resistance: "steel, fire, water, ice",
     imgFile: 'icon-set/icons/water.svg',
   },
-  {
+  grass = {
     type: "grass",
     weakness: "flying, poison, bug, fire, ice",
     resistance: "ground, water, grass, electric",
     imgFile: 'icon-set/icons/grass.svg',
   },
-  {
+  electric = {
     type: "electric",
     weakness: "ground",
     resistance: "flying, steel, electric",
     imgFile: 'icon-set/icons/electric.svg',
   },
-  {
+  psychic = {
     type: "psychic",
     weakness: "bug, ghost, dark",
     resistance: "fighting, psychic",
     imgFile: 'icon-set/icons/psychic.svg',
   },
-  {
+  ice = {
     type: "ice",
     weakness: "fighting, rock, steel, fire",
     resistance: "ice",
     imgFile: 'icon-set/icons/ice.svg',
   },
-  {
+  dragon = {
     type: "dragon",
     weakness: "ice, dragon, fairy",
     resistance: "fire, water, grass, electric",
     imgFile: 'icon-set/icons/dragon.svg',
   },
-  {
+  dark = {
     type: "dark",
     weakness: "fighting, bug, fairy",
     resistance: "ghost, dark",
     imgFile: 'icon-set/icons/dark.svg',
   },
-  {
+  fairy = {
     type: "fairy",
     weakness: "poison, ghost, dragon",
     resistance: "fighting, bug, dark",
@@ -159,24 +139,18 @@ findRes = (input) => {
 
 findImg = (input) => {
   let objI = types.find((o) => o.type == input);
-  return objI ? objI.imgFile : console.log("No Image Loaded");
-
+  return objI ? objI : console.log("No Image Loaded");
 };
 
-getImage = (input) => { 
-  let img = new Image(); 
-  weakImg.innerHTML =  img;
-  weakImg.appendChild(img); 
-}  
+// getImage = (input) => { 
+//   let img = new Image(); 
+//   weakImg.innerHTML =  img;
+//   weakImg.appendChild(img); 
+// }  
+
 
 
 // what if we dynamically insert the image element instead of removing a hidden class in the html?
-
-
-
-
-
-
 
 // findType = (input) => {
 //  if( types.includes(`${input}`)){
@@ -209,7 +183,14 @@ form.addEventListener("submit", (e) => {
   // let image = types.find(type => type.imgFile);
   // console.log(image);
   // getImage(image);
+// -------------------------------------------------------------------------------------------------------------------------------------------------------
+// if(input == "fighting"){
+//     console.log("yep");
+// }
 
+// switch(){
+
+// }
   
   
 
@@ -217,6 +198,8 @@ form.addEventListener("submit", (e) => {
   weakness.innerText = findType(input);
   
   resistance.innerText = findRes(input);
+//   weakImg.src = 
+console.log(findImg(input));
 
 // let weakImg = findType(input);
 // console.log(weakImg);
@@ -224,47 +207,6 @@ form.addEventListener("submit", (e) => {
 
 // let resImg = findRes(input);
 // res.src = resImg.imgFile.value;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
