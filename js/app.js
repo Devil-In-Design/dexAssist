@@ -13,6 +13,8 @@ const weakness = document.getElementById("weakness");
 const resistance = document.getElementById("resistance");
 const weakImg = document.getElementById("weakImg");
 const resImg = document.getElementById("resImg");
+// const weak = document.getElementById("weak");
+// const res = document.getElementById("res");
 const types = [
   {
     type: "normal",
@@ -138,6 +140,7 @@ findRes = (input) => {
 findImg = (input) => {
   let objI = types.find((o) => o.type == input);
   return objI ? objI.imgFile : console.log("No Image Loaded");
+
 };
 
 getImage = (input) => { 
@@ -194,6 +197,58 @@ form.addEventListener("submit", (e) => {
   weakness.innerText = findType(input);
   
   resistance.innerText = findRes(input);
+
+// let weakImg = findType(input);
+// console.log(weakImg);
+// weak.src = weakImg.imgFile.value;
+
+// let resImg = findRes(input);
+// res.src = resImg.imgFile.value;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   // weakImg.innerHTML = `<img src="${input.image}" />` ;
 
