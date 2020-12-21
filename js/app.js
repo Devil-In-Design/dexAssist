@@ -1,4 +1,5 @@
-// I am currently rewriting the types as objects in the test.js file to make accessing the svg images easier.
+// I am currently rewriting the types as objects in the test.js file to make accessing the svg images easier
+// Also changing so user does NOT input a type with text, instead choosing an icon and receiving the appropriate icon response
 
 
 // Separate the weakness and resistance
