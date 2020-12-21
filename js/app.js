@@ -3,7 +3,7 @@
 // Make sure to check the test.js for notes 
 
 
-
+// you have to make the type welnesses into individual values, or have a function to read the string and separate
 
 
 
