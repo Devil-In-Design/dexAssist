@@ -1,21 +1,12 @@
+// I am currently rewriting the types as objects in the test.js file to make accessing the svg images easier.
+
+
 // Separate the weakness and resistance
 // Try the display blocking and show a class for each image and type when it matches the input value.weak or res
 // Make sure to check the test.js for notes 
 
 
 // you have to make the type weaknesses into individual values, or have a function to read the string and separate
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // add in pokemon go team rocket counter guides
@@ -172,12 +163,6 @@ getImage = (input) => {
 
 // what if we dynamically insert the image element instead of removing a hidden class in the html?
 
-
-
-
-
-
-
 // findType = (input) => {
 //  if( types.includes(`${input}`)){
 //   weakness.innerText = findType(input);
@@ -209,81 +194,23 @@ form.addEventListener("submit", (e) => {
   // let image = types.find(type => type.imgFile);
   // console.log(image);
   // getImage(image);
-
-  
-  
-
   // console.log(findType(input));
   weakness.innerText = findType(input);
+  console.log(findType(input));
   
   resistance.innerText = findRes(input);
-
+  
 // let weakImg = findType(input);
 // console.log(weakImg);
 // weak.src = weakImg.imgFile.value;
-
 // let resImg = findRes(input);
 // res.src = resImg.imgFile.value;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   // weakImg.innerHTML = `<img src="${input.image}" />` ;
-
   // popup.innerHTML = `${input}.classList.remove("hide")`;
-
   form.reset();
   blink.style.display = "block";
+
 });
-
-// class of hide on the images initially. need to set up js to show the appropriate symbol with the response for input. 
-
-// add in pokemon go team rocket counter guides
-// add in combo weakness
-// add resistance sets
-// store the popup msg in a variable, then select the html element by id and set el.innerHTML = msg
 
 // Dex Info
 
@@ -296,77 +223,4 @@ form.addEventListener("submit", (e) => {
 
 
 
-// let request = new XMLHttpRequest();
-// let url = "https://pokeapi.co/api/v2/"; // add api url
-// request.open("GET", url, true);
-// request.send();
-// let response = request.responseText;
-// console.log(request.responseText);
-// let data =  JSON.stringify(response);
-// console.log(data);
-// console.log(data["text"]);
 
-
-
-
-
-// pokedex api example
-/*
-const apiData = {
-    url: 'https://pokeapi.co/api/v2/',
-    type: 'pokemon',
-    id: '25',
-}
-
-const {url, type, id} = apiData
-
-const apiUrl = `${url}${type}/${id}`
-
-fetch(apiUrl)
-    .then( (data) => {
-        if(data.ok){
-            return data.json()
-        }
-        throw new Error('Response not ok.'); 
-    })
-    .then( pokemon => generateHtml(pokemon))
-    .catch( error => console.error('Error:', error))
-
-
-const generateHtml = (data) => {
-    console.log(data)
-    const html = `
-        <div class="name">${data.name}</div>
-        <img src=${data.sprites.front_default}>
-        <div class="details">
-            <span>Height: ${data.height}</span>
-            <span>Weight: ${data.weight}</span>
-        </div>
-    `
-    const pokemonDiv = document.querySelector('.pokemon')
-    pokemonDiv.innerHTML = html
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    -—---------------------
-    
-    
-    
-    
-    
-    maybe store the find() returns in variables on a global scale, and then call them with literal notation later on click  this could pull the img and data at the same time. possible to integrate the api here? turn the popup into an html element on display?
-    
-    */
-    
