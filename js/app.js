@@ -1,3 +1,6 @@
+// wondering if i can just swap the return values for the text with an image insert
+
+
 // I am currently rewriting the types as objects in the test.js file to make accessing the svg images easier
 // Also changing so user does NOT input a type with text, instead choosing an icon and receiving the appropriate icon response
 
