@@ -1,4 +1,5 @@
 // wondering if i can just swap the return values for the text with an image insert
+// add an img src in the actual popup for this to swap in. maybe use a default image and then swap on input.
 
 
 // I am currently rewriting the types as objects in the test.js file to make accessing the svg images easier
