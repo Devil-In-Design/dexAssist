@@ -202,6 +202,7 @@ form.addEventListener("submit", (e) => {
   // console.log(findType(input));
   weakness.innerText = findType(input);
   console.log(findType(input));
+  // console.log(weakness.innerText)
   
   resistance.innerText = findRes(input);
   
